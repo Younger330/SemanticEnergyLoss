@@ -5,8 +5,8 @@ This repository contains the pytorch code for the paper:
 Addressing Sparse Annotation: a Novel Semantic Energy Loss for Tumor Cell Detection from Histopathologic Images, BIBM2023. ([PDF](https://ieeexplore.ieee.org/document/10385899))
 
 
-Our code will be available soon.
-
+We have released the source code of the loss function ‘semantic_energy_loss.py’, and the rest of the content will be released soon. 
+We look forward to your attention.
 
 ## Citation
 
