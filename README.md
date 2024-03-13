@@ -37,19 +37,19 @@ In the environment configuration, we primarily utilize `torch==1.7.1`.
 ## Usage
 
 ### Data preparation
-<!-- Before training, you need to prepare the training images and ground truth. 
+Before training, you need to prepare the training images and ground truth. 
 For the ground truth, each labeled point carries both position and the staining state of the cell membrane information. 
 The position information refers to the coordinate of centroid of cells, while the staining state of the cell membrane include complete membrane, incomplete membrane and no membrane.
 
 As an example from our dataset, we visualize the ground truth using colored-coordinates.
-In this visualization, red represents complete membrane, blue represents incomplete membrane, and green represents no membrane. -->
+In this visualization, red represents complete membrane, blue represents incomplete membrane, and green represents no membrane. 
 
 
 <!-- | Image | ground truth |
 | -----|-----| 
 | ![](images/train_img.png) | ![](images/label.png) |  -->
 
-
+We place the training images in the `Her2/img/train`, and the corresponding ground truths processed with a Gaussian kernel are placed in the `Her2/ground_truth_2classes/train`.
 
 ### Model training and test
 To training a model, set related parameters and run `python train.py`
