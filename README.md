@@ -45,9 +45,9 @@ As an example from our dataset, we visualize the ground truth using colored-coor
 In this visualization, red represents complete membrane, blue represents incomplete membrane, and green represents no membrane. 
 
 
-<!-- | Image | ground truth |
+ | Image | ground truth |
 | -----|-----| 
-| ![](images/train_img.png) | ![](images/label.png) |  -->
+| ![](images/train_img.png) | ![](images/label.png) | 
 
 We place the training images in the `Her2/img/train`, and the corresponding ground truths processed with a Gaussian kernel are placed in the `Her2/ground_truth_2classes/train`.
 
