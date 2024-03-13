@@ -5,8 +5,6 @@ This repository contains the pytorch code for the paper:
 Addressing Sparse Annotation: a Novel Semantic Energy Loss for Tumor Cell Detection from Histopathologic Images, BIBM2023. ([PDF](https://ieeexplore.ieee.org/document/10385899))
 
 
-We have released the source code of the loss function ‘semantic_energy_loss.py’, and the rest of the content will be released soon. 
-We look forward to your attention.
 
 ## Citation
 
@@ -35,7 +33,6 @@ Tumor cell detection plays a vital role in immunohistochemistry (IHC) quantitati
 
 ## Dependecies
 In the environment configuration, we primarily utilize `torch==1.7.1`.
-For further details, please refer to `requirements.txt`.
 
 ## Usage
 
@@ -55,6 +52,6 @@ In this visualization, red represents complete membrane, blue represents incompl
 
 
 ### Model training and test
-<!-- To training a model, set related parameters in the file `options.py` and run `python train.py`
+To training a model, set related parameters and run `python train.py`
 
-To evaluate the trained model on the test set, set related parameters in the file `options.py` and run `python test.py`.  -->
+To evaluate the trained model on the test set, set related parameters in the file `caculate_metric.py` and run `python test.py`. 
