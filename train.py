@@ -55,14 +55,12 @@ def main():
     train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    vig_model=vig_s_224_gelu()
+    vig_model=vig_s_224_gelu().to(device)
 
     # pre_trained
     # model_state_dict=torch.load('/home/xuzhengyang/vig_model_2classes_epoch_2023-06-16_11_52_05.pkl')
     # vig_model.load_state_dict(model_state_dict)
 
-
-    vig_model.cuda()
 
     epochs = args.epoch
     vig_model.train()
