@@ -99,11 +99,6 @@ class Decoder(nn.Module):
             nn.Conv2d(in_dim//2, in_dim//2, 3, stride=1, padding=1),
             nn.BatchNorm2d(in_dim//2),
             act_layer(act),
-
-            # nn.ConvTranspose2d(in_dim//2,in_dim//4,kernel_size=2,stride=2),
-            # nn.Conv2d(in_dim//4, in_dim//4, 3, stride=1, padding=1),
-            # nn.BatchNorm2d(in_dim//4),
-            # act_layer(act),
             
         )
         self.regression_head=nn.Sequential(
